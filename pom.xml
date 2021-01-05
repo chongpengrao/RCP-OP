@@ -17,6 +17,10 @@
     <properties>
         <java.version>1.8</java.version>
         <knife4j.version>3.0.2</knife4j.version>
+        <druid.version>1.1.10</druid.version>
+        <mybatisplus.version>3.1.0</mybatisplus.version>
+        <mysql.version>8.0.21</mysql.version>
+        <caffeine.version>2.8.8</caffeine.version>
     </properties>
 
     <dependencies>
@@ -34,7 +38,28 @@
             <artifactId>knife4j-spring-boot-starter</artifactId>
             <version>${knife4j.version}</version>
         </dependency>
-
+        <!--mysql+Druid连接池+MybatisPlus-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatisplus.version}</version>
+        </dependency>
+        <!--本地缓存caffeine-->
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+            <version>${caffeine.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
